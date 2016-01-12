@@ -104,6 +104,7 @@ install.packages("rmarkdown")
 ## YAML metadata
 <center>
 <img src='assets/img/Cover.png' style='max-width: 80%;max-height: 80%'></img>   
+Cover by Wush
 </center>
 
 ---
@@ -194,6 +195,16 @@ summary(cars$dist)
    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
    2.00   26.00   36.00   42.98   56.00  120.00 
 ```
+
+---
+## Overview
+draw graphics
+
+```r
+plot(women)  
+```
+
+![plot of chunk unnamed-chunk-4](assets/fig/unnamed-chunk-4-1.png)
 
 ---
 ## Named R code chunk. 
@@ -438,7 +449,8 @@ It’s possible to embed a Shiny application within a document.
 
 ---
 ## Wush 教學影片
-Slidify簡介 by Wush Wu
-https://www.youtube.com/watch?v=P97udK2ktuY
-20121203 MLDM Monday [markdown + knitr] (Hangout 轉播) by Wush Wu
+Slidify簡介 by Wush Wu  
+https://www.youtube.com/watch?v=P97udK2ktuY  
+
+20121203 MLDM Monday [markdown + knitr]  (Hangout 轉播) by Wush Wu  
 https://www.youtube.com/watch?v=OHKZLeKlUsM
