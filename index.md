@@ -110,13 +110,13 @@ Cover by Wush
 ---
 ## Markdown
 <center>
-<img src='assets/img/markdownOverview.png' style='max-width: 100%;max-height: 100%'></img>  
+<img src='assets/img/markdownOverview.png' style='max-width: 150%;max-height: 150%'></img>  
 </center>
 
 ---
 ## R Code Chunks
 <center>
-<img src='assets/img/markdownChunk.png' style='max-width: 80%;max-height: 80%'></img>  
+<img src='assets/img/markdownChunk.png' style='max-width: 70%;max-height: 70%'></img>  
 </center>
 
 ---
@@ -129,9 +129,9 @@ Cover by Wush
 - 這是DSP推出的第 4門課程  
 
 ```
-- 鳶尾花（iris）有 `ｒ levels(iris$Species)` 等種類，總共有 `ｒ length(levels(iris$Species))`  種
+- 鳶尾花資料集(iris dataset)有 `ｒ levels(iris$Species)` 等種類，總共有 `ｒ length(levels(iris$Species))`  種
 ```
-- 鳶尾花（iris）有 setosa, versicolor, virginica 等種類，總共有 3  種
+- 鳶尾花資料集(iris dataset)有 setosa, versicolor, virginica 等種類，總共有 3  種
 
 
 ---
@@ -146,10 +146,11 @@ Cover by Wush
 - 熵指標的公式為[ $-\sum{p_i \log{p_i}}$ ]，表示系統的亂度  
 
 ``` 
-- 請計算 $$V_t(S_t) = \max_{x_t \in \chi_t} \left(C(S_t, x_t) + \gamma \sum_{s^{\prime} \in \mathcal{S}} \mathbb{P}(s^{\prime} | S_t^n, x_t) V_{t+1}^{n-1} s^{\prime} \right)$$  
+- 請計算高斯分佈 $$f(x;\mu,\sigma^2) = \frac{1}{\sigma\sqrt{2\pi}} 
+e^{ -\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2 }$$  
 ```
-- 請計算 $$V_t(S_t) = \max_{x_t \in \chi_t} \left(C(S_t, x_t) + \gamma \sum_{s^{\prime} \in \mathcal{S}} \mathbb{P}(s^{\prime} | S_t^n, x_t) V_{t+1}^{n-1} s^{\prime} \right)$$  
-  
+- 請計算高斯分佈 $$f(x;\mu,\sigma^2) = \frac{1}{\sigma\sqrt{2\pi}} 
+e^{ -\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2 }$$
 
 
 ---
@@ -204,7 +205,7 @@ draw graphics
 plot(women)  
 ```
 
-![plot of chunk unnamed-chunk-4](assets/fig/unnamed-chunk-4-1.png)
+![plot of chunk plot1](assets/fig/plot1-1.png)
 
 ---
 ## Named R code chunk. 
@@ -238,7 +239,11 @@ knitr::opts_chunk$set(echo=FALSE, results='hide')
 
 ---
 ## Exercise
-利用R Markdown 製作《一周天氣預報》書面報告。
+利用R Markdown 製作《一周天氣預報》書面報告。[範例](https://dspim.github.io/A1-basic-data-analysis/RMD-example/RmdExAns.html)  
+<center><img  src="assets/img/exam_q1.png" height="500" width="800"></center>
+
+
+## 資料來源及參考資料：
 - [原始出處](http://www.cwb.gov.tw/V7/forecast/taiwan/Taipei_City.htm)
 - [參考範本](https://github.com/dspim/a1-basic-data-analysis-course/blob/master/RmdExQue.Rmd)
 - [範例資料](https://github.com/dspim/a1-basic-data-analysis-course/blob/master/data/weather-utf8.csv)

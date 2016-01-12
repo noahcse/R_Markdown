@@ -217,7 +217,7 @@ Cover by Wush
   </hgroup>
   <article data-timings="">
     <p><center>
-<img src='assets/img/markdownOverview.png' style='max-width: 100%;max-height: 100%'></img><br>
+<img src='assets/img/markdownOverview.png' style='max-width: 150%;max-height: 150%'></img><br>
 </center></p>
 
   </article>
@@ -229,7 +229,7 @@ Cover by Wush
   </hgroup>
   <article data-timings="">
     <p><center>
-<img src='assets/img/markdownChunk.png' style='max-width: 80%;max-height: 80%'></img><br>
+<img src='assets/img/markdownChunk.png' style='max-width: 70%;max-height: 70%'></img><br>
 </center></p>
 
   </article>
@@ -251,11 +251,11 @@ Cover by Wush
 <li>這是DSP推出的第 4門課程<br></li>
 </ul>
 
-<pre><code>- 鳶尾花（iris）有 `ｒ levels(iris$Species)` 等種類，總共有 `ｒ length(levels(iris$Species))`  種
+<pre><code>- 鳶尾花資料集(iris dataset)有 `ｒ levels(iris$Species)` 等種類，總共有 `ｒ length(levels(iris$Species))`  種
 </code></pre>
 
 <ul>
-<li>鳶尾花（iris）有 setosa, versicolor, virginica 等種類，總共有 3  種</li>
+<li>鳶尾花資料集(iris dataset)有 setosa, versicolor, virginica 等種類，總共有 3  種</li>
 </ul>
 
   </article>
@@ -282,11 +282,13 @@ Cover by Wush
 <li>熵指標的公式為[ \(-\sum{p_i \log{p_i}}\) ]，表示系統的亂度<br></li>
 </ul>
 
-<pre><code>- 請計算 $$V_t(S_t) = \max_{x_t \in \chi_t} \left(C(S_t, x_t) + \gamma \sum_{s^{\prime} \in \mathcal{S}} \mathbb{P}(s^{\prime} | S_t^n, x_t) V_{t+1}^{n-1} s^{\prime} \right)$$  
+<pre><code>- 請計算高斯分佈 $$f(x;\mu,\sigma^2) = \frac{1}{\sigma\sqrt{2\pi}} 
+e^{ -\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2 }$$  
 </code></pre>
 
 <ul>
-<li>請計算 \[V_t(S_t) = \max_{x_t \in \chi_t} \left(C(S_t, x_t) + \gamma \sum_{s^{\prime} \in \mathcal{S}} \mathbb{P}(s^{\prime} | S_t^n, x_t) V_{t+1}^{n-1} s^{\prime} \right)\]<br></li>
+<li>請計算高斯分佈 \[f(x;\mu,\sigma^2) = \frac{1}{\sigma\sqrt{2\pi}} 
+e^{ -\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2 }\]</li>
 </ul>
 
   </article>
@@ -376,7 +378,7 @@ summary(cars$dist)
 <pre><code class="r">plot(women)  
 </code></pre>
 
-<p><img src="assets/fig/unnamed-chunk-4-1.png" alt="plot of chunk unnamed-chunk-4"></p>
+<p><img src="assets/fig/plot1-1.png" alt="plot of chunk plot1"></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -429,7 +431,10 @@ plot(cars)
     <h2>Exercise</h2>
   </hgroup>
   <article data-timings="">
-    <p>利用R Markdown 製作《一周天氣預報》書面報告。</p>
+    <p>利用R Markdown 製作《一周天氣預報》書面報告。<a href="https://dspim.github.io/A1-basic-data-analysis/RMD-example/RmdExAns.html">範例</a><br>
+<center><img  src="assets/img/exam_q1.png" height="500" width="800"></center></p>
+
+<h2>資料來源及參考資料：</h2>
 
 <ul>
 <li><a href="http://www.cwb.gov.tw/V7/forecast/taiwan/Taipei_City.htm">原始出處</a></li>

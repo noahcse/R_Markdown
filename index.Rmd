@@ -142,13 +142,13 @@ Cover by Wush
 ---
 ## Markdown
 <center>
-`r fig("markdownOverview.png")`  
+`r fig("markdownOverview.png",150)`  
 </center>
 
 ---
 ## R Code Chunks
 <center>
-`r fig("markdownChunk.png", 80)`  
+`r fig("markdownChunk.png", 70)`  
 </center>
 
 ---
@@ -161,9 +161,9 @@ Cover by Wush
 - 這是DSP推出的第 `r 3+1`門課程  
 
 ```
-- 鳶尾花（iris）有 `ｒ levels(iris$Species)` 等種類，總共有 `ｒ length(levels(iris$Species))`  種
+- 鳶尾花資料集(iris dataset)有 `ｒ levels(iris$Species)` 等種類，總共有 `ｒ length(levels(iris$Species))`  種
 ```
-- 鳶尾花（iris）有 `r levels(iris$Species)` 等種類，總共有 `r length(levels(iris$Species))`  種
+- 鳶尾花資料集(iris dataset)有 `r levels(iris$Species)` 等種類，總共有 `r length(levels(iris$Species))`  種
 
 
 ---
@@ -178,10 +178,11 @@ Cover by Wush
 - 熵指標的公式為[ $-\sum{p_i \log{p_i}}$ ]，表示系統的亂度  
 
 ``` 
-- 請計算 $$V_t(S_t) = \max_{x_t \in \chi_t} \left(C(S_t, x_t) + \gamma \sum_{s^{\prime} \in \mathcal{S}} \mathbb{P}(s^{\prime} | S_t^n, x_t) V_{t+1}^{n-1} s^{\prime} \right)$$  
+- 請計算高斯分佈 $$f(x;\mu,\sigma^2) = \frac{1}{\sigma\sqrt{2\pi}} 
+e^{ -\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2 }$$  
 ```
-- 請計算 $$V_t(S_t) = \max_{x_t \in \chi_t} \left(C(S_t, x_t) + \gamma \sum_{s^{\prime} \in \mathcal{S}} \mathbb{P}(s^{\prime} | S_t^n, x_t) V_{t+1}^{n-1} s^{\prime} \right)$$  
-  
+- 請計算高斯分佈 $$f(x;\mu,\sigma^2) = \frac{1}{\sigma\sqrt{2\pi}} 
+e^{ -\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2 }$$
 
 
 ---
@@ -224,7 +225,7 @@ summary(cars$dist)
 ---
 ## Overview
 draw graphics
-```{r}
+```{r plot1,fig.width=8, fig.height=5}
 plot(women)  
 ```  
 
@@ -260,7 +261,11 @@ knitr::opts_chunk$set(echo=FALSE, results='hide')
 
 ---
 ## Exercise
-利用R Markdown 製作《一周天氣預報》書面報告。
+利用R Markdown 製作《一周天氣預報》書面報告。[範例](https://dspim.github.io/A1-basic-data-analysis/RMD-example/RmdExAns.html)  
+<center><img  src="assets/img/exam_q1.png" height="500" width="800"></center>
+
+
+## 資料來源及參考資料：
 - [原始出處](http://www.cwb.gov.tw/V7/forecast/taiwan/Taipei_City.htm)
 - [參考範本](https://github.com/dspim/a1-basic-data-analysis-course/blob/master/RmdExQue.Rmd)
 - [範例資料](https://github.com/dspim/a1-basic-data-analysis-course/blob/master/data/weather-utf8.csv)
