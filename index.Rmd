@@ -260,15 +260,21 @@ knitr::opts_chunk$set(echo=FALSE, results='hide')
 ```
 
 ---
-## Exercise
+## Exercise：  
 利用R Markdown 製作《一周天氣預報》書面報告。[範例](https://dspim.github.io/A1-basic-data-analysis/RMD-example/RmdExAns.html)  
-<center><img  src="assets/img/exam_q1.png" height="500" width="800"></center>
+- [原始出處](http://www.cwb.gov.tw/V7/forecast/taiwan/Taipei_City.htm)  
+- [參考範本](https://github.com/dspim/a1-basic-data-analysis-course/blob/master/RmdExQue.Rmd)  
+- [範例資料](https://github.com/dspim/a1-basic-data-analysis-course/blob/master/data/weather-utf8.csv)  
 
 
-## 資料來源及參考資料：
-- [原始出處](http://www.cwb.gov.tw/V7/forecast/taiwan/Taipei_City.htm)
-- [參考範本](https://github.com/dspim/a1-basic-data-analysis-course/blob/master/RmdExQue.Rmd)
-- [範例資料](https://github.com/dspim/a1-basic-data-analysis-course/blob/master/data/weather-utf8.csv)
+---
+## Exercise: 整理前：  
+<center><img  src="assets/img/forecast_tpe1.png" height="550" width="800"></center>  
+
+---
+## Exercise: 整理後：
+<center><img  src="assets/img/exam_q1.png" height="550" width="800"></center>  
+
 
 ---
 ## Exercise Q1
@@ -417,15 +423,13 @@ output: html_document
 </code></pre>
 
 ---
-## Some Useful HTML
-- [iframe](http://www.w3schools.com/tags/tag_iframe.asp): displaying a web page within a web page
+## Some Useful HTML  
+- [iframe](http://www.w3schools.com/tags/tag_iframe.asp): displaying a web page within a web page  
 ```html
-<iframe src="http://twconf.data-sci.org/" height=600 width=800></iframe>
-```
+<iframe src="http://dsp.im/" height=600 width=800></iframe>
+```  
 
-- [img](http://www.w3schools.com/tags/tag_img.asp): inserting images into an HTML document.
-    
-    Much easier for adjusting width and height.
+- [img](http://www.w3schools.com/tags/tag_img.asp): inserting images into an HTML document. Much easier for adjusting width and height.  
 ```html
 <img src="assets/img/dsp-logo.png" alt="logo">
 ```
