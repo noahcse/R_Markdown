@@ -438,7 +438,7 @@ Cover by Wush
 ```html
 <iframe src="http://dsp.im/" height=600 width=800></iframe>
 ```  
-
+  
 - [img](http://www.w3schools.com/tags/tag_img.asp): inserting images into an HTML document. Much easier for adjusting width and height.  
 ```html
 <img src="assets/img/dsp-logo.png" alt="logo">
@@ -453,24 +453,7 @@ It’s possible to embed a Shiny application within a document.
 *** =right
 <img src='assets/img/shiny-hist-plot.gif' style='max-width: 100%;max-height: 100%'></img>    
 
-<!--
----
-## Interactive Documents
-It’s possible to embed a Shiny application within a document.
 
-<div class="columns-2">
-  <img src="assets/img/shiny-cars-table.gif" alt="hack_yaml" height="400" weight="300">
-  <img src="assets/img/shiny-hist-plot.gif" alt="hack_yaml" height="400" weight="300">
-</div>
-
-
---- 
-## 更豐富互動視覺化工具套件 shiny
-<center>
-<img src='assets/img/dsp-A2.png' style='max-width: 100%;max-height: 100%'></img>   
-<small>https://dsp.im/events/a2-advanced-data-analysis-course/</small>
-</center>
-!--> 
 ---
 ## Publish to the web
 Using R packages::slidify to publish your slides to the web
@@ -487,12 +470,14 @@ publish_gist("title",file="file_name.html",publish=TRUE)
 1. sign up or login in Github.com at browser
 2. find button: New repository to add new one.
 3. select a name for repository, then created.
-4. your new repository would be like:"https://github.com/noahcse/xxxxxx.git"
+4. the link of your new repository would be like:  
+    [https://github.com/"your_name"/"repo_name".git](https://github.com/your_name/repo_name.git)
 5. find Settings in your profile at top-right corner
 6. select SSH Keys and add SSH Key
 7. upload your SSH key which created by your own PC/notebook.
 8. at RStudio, using publish_github("repo name", username="your name")
-9. done.
+9. your new page will be ready in 5~10 min and link:  
+    [https://"your_name".github.io/"repo_name".html](https://your_name.github.io/repo_name.html)  
 
 --- 
 ## References
@@ -503,6 +488,7 @@ publish_gist("title",file="file_name.html",publish=TRUE)
 - [RStudio Documentation](https://support.rstudio.com/hc/en-us/categories/200035113-Documentation)
 - [Reproducible Research](https://www.coursera.org/course/repdata)
 - [Shiny Articles](http://shiny.rstudio.com/articles/)
+- [Publish to Github Pages/Dropbox/Rpubs](http://slidify.org/publish.html)
 
 ---
 ## Wush 教學影片
