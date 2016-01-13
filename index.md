@@ -9,14 +9,7 @@ hitheme     : tomorrow      #
 widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
-github:
-  user: noahcse
-  repo: R_Markdown
 ---
-
-```
-&twocol .largecontent
-```
 
 
 
@@ -97,20 +90,13 @@ install.packages("rmarkdown")
 ---
 ## Overview
 <center>
-<img src='assets/img/RmdOverview.png' style='max-width: 80%;max-height: 80%'></img> 
-</center>
-
----
-## YAML metadata
-<center>
-<img src='assets/img/Cover.png' style='max-width: 80%;max-height: 80%'></img>   
-Cover by Wush
+<img src='assets/img/RmdOverview.png' style='max-width: 77%;max-height: 77%'></img> 
 </center>
 
 ---
 ## Markdown
 <center>
-<img src='assets/img/markdownOverview.png' style='max-width: 150%;max-height: 150%'></img>  
+<img src='assets/img/markdownOverview.png' style='max-width: 200%;max-height: 200%'></img>  
 </center>
 
 ---
@@ -129,28 +115,29 @@ Cover by Wush
 - 這是DSP推出的第 4門課程  
 
 ```
-- 鳶尾花資料集(iris dataset)有 `ｒ levels(iris$Species)` 等種類，總共有 `ｒ length(levels(iris$Species))`  種
+- 鳶尾花資料集(iris dataset)有 `ｒ levels(iris$Species)` 等種類，
+  總共有 `ｒ length(levels(iris$Species))` 種
 ```
-- 鳶尾花資料集(iris dataset)有 setosa, versicolor, virginica 等種類，總共有 3  種
+- 鳶尾花資料集(iris dataset)有 setosa, versicolor, virginica 等種類，  
+  總共有 3  種
 
 
 ---
 ## Inline R Equations
 - 插入 LaTeX 公式的方法：   
-    * 行內`$ equation $`   
-    * 段落 `$$ equation $$`
+  * 行內`$ equation $`   
+  * 段落 `$$ equation $$`
 
 ``` 
-- 熵指標的公式為[ $-\sum{p_i \log{p_i}}$ ]，表示系統的亂度  
+熵指標的公式為 $-\sum{p_i \log{p_i}}$ ，表示系統的亂度  
 ```
-- 熵指標的公式為[ $-\sum{p_i \log{p_i}}$ ]，表示系統的亂度  
+熵指標的公式為 $-\sum{p_i \log{p_i}}$ ，表示系統的亂度  
 
 ``` 
-- 請計算高斯分佈 $$f(x;\mu,\sigma^2) = \frac{1}{\sigma\sqrt{2\pi}} 
+請計算高斯分佈 $$f(x;\mu,\sigma^2) = \frac{1}{\sigma\sqrt{2\pi}} 
 e^{ -\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2 }$$  
 ```
-- 請計算高斯分佈 $$f(x;\mu,\sigma^2) = \frac{1}{\sigma\sqrt{2\pi}} 
-e^{ -\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2 }$$
+請計算高斯分佈 $$f(x;\mu,\sigma^2) = \frac{1}{\sigma\sqrt{2\pi}} e^{ -\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2 }$$
 
 
 ---
@@ -172,7 +159,7 @@ rmarkdown::render("input.Rmd")
 ## Markdown Quick Reference
 在RStudio中，在UI界面中點選`help (?)`可以查閱Markdown語法   
 <center>
-<img src='assets/img/MdRef.png' style='max-width: 80%;max-height: 80%'></img>  
+<img src='assets/img/MdRef.png' style='max-width: 75%;max-height: 75%'></img>  
 </center>
 
 --- .segue .dark
@@ -200,6 +187,10 @@ summary(cars$dist)
 ---
 ## Overview
 draw graphics
+<pre class="markdown"><code>&#96;&#96;&#96;{r}
+plot(women)
+&#96;&#96;&#96;
+</code></pre>
 
 ```r
 plot(women)  
@@ -226,11 +217,14 @@ plot(cars)
 - `echo`(TRUE): whether to include R source code in the output file  
 - `eval`(TRUE): whether to evaluate the code chunk  
 - `message`(TRUE): whether to preserve messages emitted by message()  
+- `results`('hide','asis'): hide output ; asis treats the output of your R code as literal Markdown (when using like kable function)  
+<br>
 - `include`(TRUE): whether to be written into the output document, but the code is still evaluated and plot files are generated  
 - `warning`(TRUE): whether to preserve warnings in the output 
 - `comment`("##"): set to comment notation 
-- `results`('hide','asis'): hide output ; asis treats the output of your R code as literal Markdown (when using like kable function)
 
+---
+## Basic Chunk Options (cont.)
 Set global chunk options at code chunks header:
 
 ```r
@@ -246,12 +240,12 @@ knitr::opts_chunk$set(echo=FALSE, results='hide')
 
 
 ---
-## Exercise: 整理前：  
-<center><img  src="assets/img/forecast_tpe1.png" height="550" width="800"></center>  
+## Exercise: Original：  
+<center><img  src="assets/img/forecast_tpe1.png" height="500" width="800"></center>  
 
 ---
-## Exercise: 整理後：
-<center><img  src="assets/img/exam_q1.png" height="550" width="800"></center>  
+## Exercise: After：
+<center><img  src="assets/img/exam_q1.png" height="500" width="800"></center>  
 
 
 ---
@@ -294,14 +288,30 @@ min(dat[1:2, 4:5])
 
 ---
 ## Table Output
+Print data directly:  
 
-Set `results='asis'` to write raw results from R into the output document
-- `knitr::kable`
+```r
+print(head(women))
+```
 
-    <pre class="markdown"><code>&#96;&#96;&#96;{r, results='asis'}
-    knitr::kable(women)
-    &#96;&#96;&#96;
-    </code></pre>
+```
+  height weight
+1     58    115
+2     59    117
+3     60    120
+4     61    123
+5     62    126
+6     63    129
+```
+
+---
+## Table Output (cont.)
+- Using `knitr::kable` :  
+    - Set `results='asis'` to write raw results from R into the output document  
+  <pre class="markdown"><code>&#96;&#96;&#96;{r, results='asis'}
+  knitr::kable(women)
+  &#96;&#96;&#96;
+  </code></pre>
 
 
 | height| weight|
@@ -415,6 +425,14 @@ output: html_document
 </code></pre>
 
 ---
+## YAML metadata
+<center>
+<img src='assets/img/Cover.png' style='max-width: 80%;max-height: 80%'></img>   
+Cover by Wush
+</center>
+
+
+---
 ## Some Useful HTML  
 - [iframe](http://www.w3schools.com/tags/tag_iframe.asp): displaying a web page within a web page  
 ```html
@@ -427,17 +445,25 @@ output: html_document
 ```
 <img src="assets/img/dsp-logo.png" alt="logo">
 
+--- &twocol
+## Interactive Documents
+It’s possible to embed a Shiny application within a document.
+*** =left
+<img src='assets/img/shiny-cars-table.gif' style='max-width: 100%;max-height: 100%'></img>    
+*** =right
+<img src='assets/img/shiny-hist-plot.gif' style='max-width: 100%;max-height: 100%'></img>    
+
+<!--
 ---
 ## Interactive Documents
 It’s possible to embed a Shiny application within a document.
 
 <div class="columns-2">
-  <img src="assets/img/shiny-cars-table.gif" alt="hack_yaml" height="400">
-  <img src="assets/img/shiny-hist-plot.gif" alt="hack_yaml" height="400">
+  <img src="assets/img/shiny-cars-table.gif" alt="hack_yaml" height="400" weight="300">
+  <img src="assets/img/shiny-hist-plot.gif" alt="hack_yaml" height="400" weight="300">
 </div>
 
 
-<!--
 --- 
 ## 更豐富互動視覺化工具套件 shiny
 <center>
@@ -445,6 +471,28 @@ It’s possible to embed a Shiny application within a document.
 <small>https://dsp.im/events/a2-advanced-data-analysis-course/</small>
 </center>
 !--> 
+---
+## Publish to the web
+Using R packages::slidify to publish your slides to the web
+```
+library(slidify)
+publish_github("repo", username="user_name")
+publish_rpubs("title","file_name.html")
+publish_dropbox(dir_name)
+publish_gist("title",file="file_name.html",publish=TRUE)
+```
+
+---
+## Publish to the web: Github
+1. sign up or login in Github.com at browser
+2. find button: New repository to add new one.
+3. select a name for repository, then created.
+4. your new repository would be like:"https://github.com/noahcse/xxxxxx.git"
+5. find Settings in your profile at top-right corner
+6. select SSH Keys and add SSH Key
+7. upload your SSH key which created by your own PC/notebook.
+8. at RStudio, using publish_github("repo name", username="your name")
+9. done.
 
 --- 
 ## References
