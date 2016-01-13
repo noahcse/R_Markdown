@@ -185,7 +185,7 @@ summary(cars$dist)
 ```
 
 ---
-## Overview
+## Overview (cont.)
 draw graphics
 <pre class="markdown"><code>&#96;&#96;&#96;{r}
 plot(women)
@@ -288,7 +288,7 @@ min(dat[1:2, 4:5])
 
 ---
 ## Table Output
-Print data directly:  
+- Print data directly:  
 
 ```r
 print(head(women))
