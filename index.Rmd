@@ -472,9 +472,9 @@ publish_gist("title",file="file_name.html",publish=TRUE)
 5. find Settings in your profile at top-right corner
 6. select SSH Keys and add SSH Key
 7. upload your SSH key which created by your own PC/notebook.
-8. at RStudio, using publish_github("repo name", username="your name")
+8. at RStudio, using publish_github("repo_name", username="your_name")
 9. your new page will be ready in 5~10 min and link:  
-    [https://"your_name".github.io/"repo_name".html](https://your_name.github.io/repo_name.html)  
+    [https://"your_name".github.io/"repo_name"/index.html](https://your_name.github.io/repo_name/index.html)  
 
 --- 
 ## References
